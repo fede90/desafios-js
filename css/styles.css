@@ -1,0 +1,134 @@
+body{
+    font-family: 'Red Hat Text', sans-serif;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/bg-stars.svg), url(../img/pattern-hills.svg);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-color: hsl(234, 17%, 12%);
+    text-align: center;
+    padding: 2em;
+    color: white;
+}
+
+header{
+    display: flex;
+}
+
+.title{
+    margin: auto;
+    padding: 0;
+    text-transform: uppercase;
+    color: white;
+    font-size: 24px;
+}
+
+.settings{
+    position: fixed;
+    width: 20%;
+    margin: 10px 0px;
+    height: 100%;
+    left: 0;
+}
+
+.settings-show{
+    background-color: #1E1F29;
+}
+.settings-form{
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    transform: translateX(0);
+    transition: width 2s, height 2s, transform 2s;
+    z-index: 10;
+    left: 0px;
+    position: absolute;
+}
+
+.settings-form-show{
+    transform: translateX(50%);
+    visibility: visible;
+}
+
+
+
+
+label{
+    margin: 15px 0px 2px;
+}
+
+input{
+    width: 50px;
+    margin: auto;
+    padding: 5px 0px;
+}
+
+.settings-buttons{
+    margin: 20px 0px;
+}
+.countdown-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.countdown-container__item{
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: .5rem;
+    height: 50%;
+}
+
+.time{
+    width: 80px;
+    border: 1px solid hsl(240, 21%, 22%);
+    border-radius: 10px 10px 10px 10px;
+    margin: auto;
+    background-color: hsl(240, 21%, 22%);
+    color: #FB6087;
+}
+
+.time-description{
+    margin: 10px 0px;
+    font-size: 20px;
+}
+
+footer{
+    color: hsl(237, 18%, 59%);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+footer a{
+    color: hsl(345, 95%, 68%);
+}
+
+@media (max-width: 400px) {
+    .countdown-container{
+        flex-direction: column;
+    }
+    footer{
+        bottom: auto;
+    }
+}
+
+@media (min-width: 400px) {
+    .countdown-container{
+        flex-direction: row;
+    }
+    footer{
+        bottom: auto;
+    }
+}
+
+@media (min-width: 600px) {
+    .countdown-container{
+        flex-direction: row;
+    }
+    footer{
+        bottom: 0;
+    }
+}

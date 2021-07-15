@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+        <title>Countdown</title>
+    </head>
+    <body>
+        <header>
+
+            <button onclick="showSettings()"><i class="fa fa-bars"></i></button>
+            <h1 class="title">We're launching soon</h1>
+        </header>
+
+        <section class="settings">
+
+
+
+            <form action="" id="form-settings" class="settings-form" onsubmit="return false">
+
+                <label>Days</label>
+                <input type="number" id="settings-days">
+
+                <label>Hours</label>
+                <input type="number" id="settings-hours">
+
+                <label>Minutes</label>
+                <input type="number" id="settings-minutes">
+
+                <label>Seconds</label>
+                <input type="number" id="settings-seconds">
+                <div class="settings-buttons">
+                    <button id="settings-start" onclick="startByButton()">Start</button>
+                    <button id="settings-cancel">Cancel</button>
+                </div>
+            </form>
+        </section>
+        <section>
+            <div class="countdown-container">
+                <div class="countdown-container__item">
+                    <div class="time"><p id="days">00</p></div>
+                    <p class="time-description">days</p>
+                </div>
+                <div class="countdown-container__item">
+                    <div class="time"><p id="hours">00</p></div>
+                    <p class="time-description">hours</p>
+                </div>
+                <div class="countdown-container__item">
+                    <div class="time"><p id="minutes">00</p></div>
+                    <p class="time-description">minutes</p>
+                </div>
+                <div class="countdown-container__item">
+                    <div class="time"><p id="seconds">00</p></div>
+                    <p class="time-description">seconds</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div>
+                <img src="img/icon-facebook.svg" alt="icon-facebook">
+                <img src="img/icon-instagram.svg" alt="icon-instagram">
+                <img src="img/icon-pinterest.svg" alt="icon-pinterest">
+            </div>
+            <p>Challenge by <a href="https://www.frontendmentor.io" target="_blank">Frontend Mentor</a>.
+                Coded by <a href="https://github.com/fede90" target="_blank">fede90</a>.</p>
+        </footer>
+        <script src="js/countdown.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
