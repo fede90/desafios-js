@@ -30,9 +30,11 @@ header{
     margin: 10px 0px;
     height: 100%;
     left: 0;
+
 }
 
 .settings-show{
+    top: 0;
     background-color: #1E1F29;
 }
 .settings-form{
@@ -51,21 +53,30 @@ header{
     visibility: visible;
 }
 
-
-
-
 label{
-    margin: 15px 0px 2px;
+    margin: 25px 0px 2px;
+    color: hsl(237, 18%, 59%);
 }
 
 input{
     width: 50px;
     margin: auto;
-    padding: 5px 0px;
+    padding: 5px 5px;
+    color: #FB6087;
+    background-color: hsl(236,21%, 26%);
+    border: none;
 }
 
 .settings-buttons{
     margin: 20px 0px;
+}
+
+.settings-buttons button{
+    background-color: hsl(236,21%, 26%);
+    border: none;
+    color: hsl(0,0%,100%);
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
 }
 .countdown-container{
     display: flex;
